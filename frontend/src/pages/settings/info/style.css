@@ -1,0 +1,14 @@
+.info__container {
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.info__wrapper {
+    margin: 10px 0;
+}
+
+.info__content {
+    background-color: #F8F8F8;
+    border-radius: 16px;
+    padding: 25px;
+}

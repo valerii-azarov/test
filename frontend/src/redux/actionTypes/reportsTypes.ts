@@ -1,0 +1,8 @@
+export enum ReportsTypes {
+  // завантаження звіту
+  LOAD_REPORTS_REQUEST = "LOAD_REPORTS_REQUEST",
+  LOAD_REPORTS_SUCCESS = "LOAD_REPORTS_SUCCESS",
+  LOAD_REPORTS_FAILURE = "LOAD_REPORTS_FAILURE",
+  // скидання даних
+  RESET_DATA = "RESET_DATA",
+}

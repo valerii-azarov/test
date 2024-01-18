@@ -1,0 +1,192 @@
+.reports__container {
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.reports__wrapper {
+    padding: 25px;
+}
+
+.reports__top,
+.reports__bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.reports__header {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 0;
+    gap: 5px;
+}
+
+.reports__title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.reports__refresh-button {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid #F8F8F8;
+    border-radius: 5px;
+}
+
+.reports__refresh-button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    max-width: 5px;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.reports__refresh-button:hover {
+    background: #F8F8F8;
+    border: 2px solid #E7EEF3;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------- */
+
+.reports-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.reports-table th,
+.reports-table td {
+    border: 1px solid #4F4F4F;
+    padding: 5px 15px;
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #71737C;
+}
+
+.reports-table th {
+    background-color: #F8F8F8;
+    color: #000000;
+}
+
+.reports-table th.report-number {
+    width: 5%;
+}
+
+.reports-table th.report-date {
+    width: 5%;
+}
+
+.reports-table th.report-employee-salaries {
+    width: 15%;
+}
+
+.reports-table th.report-worked-hours {
+    width: 15%;
+}
+
+.reports-table th.report-without-tax {
+    width: 10%;
+}
+
+.reports-table th.report-vat-from-total {
+    width: 10%;
+}
+
+.reports-table th.report-with-tax {
+    width: 10%;
+}
+
+/* --------------------------------------------------------------- */
+
+.employee-salaries-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-salaries-table th,
+.employee-salaries-table td {
+    border-top: 1px solid #F8F8F8;
+    border-bottom: 1px solid #F8F8F8;
+    padding: 10px 15px;
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 12px;
+    max-width: 500px;
+    line-height: 1.5;
+    color: #71737C;
+}
+
+.employee-salaries-table th {
+    background-color: #F8F8F8;
+    color: #000000;
+}
+
+.employee-salaries-table th.employee-salary-number {
+    width: 5%;
+}
+
+.employee-salaries-table th.employee-salary-name {
+    width: 15%;
+}
+
+.employee-salaries-table th.employee-salary-date {
+    width: 15%;
+}
+
+.employee-salaries-table th.employee-salary-worked-hours {
+    width: 15%;
+}
+
+.employee-salaries-table th.employee-salary-with-tax {
+    width: 10%;
+}
+
+.employee-salaries-table th.employee-salary-status {
+    width: 10%;
+}
+
+.employee-salaries-table td.employee-salary-status.paid {
+    color: var(--green-6);
+}
+
+.employee-salaries-table td.employee-salary-status.not-paid {
+    color: var(--red-6);
+}
+
+.employee-salaries-table th.employee-salary-actions {
+    width: 10%;
+}
+
+.employee-salaries-table button {
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.employee-salaries-table button.button-approve {
+    color: #2E8D00;
+}
+
+.employee-salaries-table button.button-view {
+    color: #004DEB;
+}
+
+.employee-salaries-table button:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------- */
+
+.employee-salaries-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}

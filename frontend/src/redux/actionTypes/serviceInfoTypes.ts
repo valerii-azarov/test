@@ -1,0 +1,8 @@
+export enum ServiceInfoTypes {
+  // завантаження інформації про послуги
+  LOAD_SERVICE_INFO_REQUEST = "LOAD_SERVICE_INFO_REQUEST",
+  LOAD_SERVICE_INFO_SUCCESS = "LOAD_SERVICE_INFO_SUCCESS",
+  LOAD_SERVICE_INFO_FAILURE = "LOAD_SERVICE_INFO_FAILURE",
+  // скидання даних
+  RESET_DATA = "RESET_DATA",
+}

@@ -1,0 +1,8 @@
+export enum ServicesTypes {
+  // завантаження послуг
+  LOAD_SERVICES_REQUEST = "LOAD_SERVICES_REQUEST",
+  LOAD_SERVICES_SUCCESS = "LOAD_SERVICES_SUCCESS",
+  LOAD_SERVICES_FAILURE = "LOAD_SERVICES_FAILURE",
+  // скидання даних
+  RESET_DATA = "RESET_DATA",
+}

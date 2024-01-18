@@ -1,0 +1,8 @@
+export enum AppearanceTypes {
+  // завантаження налаштування
+  LOAD_APPEARANCE_REQUEST = "LOAD_APPEARANCE_REQUEST",
+  LOAD_APPEARANCE_SUCCESS = "LOAD_APPEARANCE_SUCCESS",
+  LOAD_APPEARANCE_FAILURE = "LOAD_APPEARANCE_FAILURE",
+  // скидання даних
+  RESET_DATA = "RESET_DATA",
+}

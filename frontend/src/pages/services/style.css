@@ -1,0 +1,112 @@
+.services__container {
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.services__wrapper {
+    padding: 25px;
+}
+
+.services__top,
+.services__bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.services__header {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 0; 
+    gap: 5px;
+}
+
+.services__title {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* --------------------------------------------------------------- */
+
+.services__multi-switch-container {
+    background: #F8F8F8;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.services__multi-switch-wrapper input {
+    position: absolute;
+    opacity: 0;
+}
+
+.services__multi-switch-slide {
+    position: relative;
+    display: flex;
+    background: #F8F8F8;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.services__multi-switch-slide label {
+    width: 50%;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.services__multi-switch-slide a {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    transition: left 300ms ease-in-out;
+    z-index: 5;
+    background: #FFFFFF;
+    border-radius: 7px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.services__multi-switch-wrapper label:nth-last-child(8),
+.services__multi-switch-wrapper label:nth-last-child(8)~label,
+.services__multi-switch-wrapper label:nth-last-child(8)~a {
+    width: 25%;
+}
+
+.services__multi-switch-wrapper label:nth-last-child(10),
+.services__multi-switch-wrapper label:nth-last-child(10)~label,
+.services__multi-switch-wrapper label:nth-last-child(10)~a {
+    width: 20%;
+}
+
+.services__multi-switch-wrapper input:checked~a {
+    left: 0;
+}
+
+.services__multi-switch-wrapper label:nth-last-child(8)~input:nth-child(3):checked~a {
+    left: 25%;
+}
+
+.services__multi-switch-wrapper label:nth-last-child(8)~input:nth-child(5):checked~a {
+    left: 50%;
+}
+
+.services__multi-switch-wrapper label:nth-last-child(8)~input:nth-child(7):checked~a {
+    left: 75%;
+}
+
+.services__multi-switch-wrapper label:nth-last-child(10)~input:nth-child(3):checked~a {
+    left: 20%;
+}
+
+.services__multi-switch-wrapper label:nth-last-child(10)~input:nth-child(5):checked~a {
+    left: 40%;
+}
+
+.services__multi-switch-wrapper label:nth-last-child(10)~input:nth-child(7):checked~a {
+    left: 60%;
+}
+
+.services__multi-switch-wrapper label:nth-last-child(10)~input:nth-child(9):checked~a {
+    left: 80%;
+}

@@ -1,0 +1,137 @@
+.employees__container {
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.employees__wrapper {
+    padding: 25px;
+}
+
+.employees__header {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 0;
+    gap: 5px;
+}
+
+.employees__title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.employees__refresh-button {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid #F8F8F8;
+    border-radius: 5px;
+}
+
+.employees__refresh-button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    max-width: 5px;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.employees__refresh-button:hover {
+    background: #F8F8F8;
+    border: 2px solid #E7EEF3;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------- */
+
+.employees-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employees-table th,
+.employees-table td {
+    border-top: 1px solid #F8F8F8;
+    border-bottom: 1px solid #F8F8F8;
+    padding: 10px 15px;
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 12px;
+    max-width: 500px;
+    line-height: 1.5;
+    color: #71737C;
+}
+
+.employees-table th {
+    background-color: #F8F8F8;
+    color: #000000;
+}
+
+.employees-table th.employee-number {
+    width: 15%;
+}
+
+.employees-table th.employee-name {
+    width: 35%;
+}
+
+.employees-table th.employee-position {
+    width: 20%;
+}
+
+.employees-table th.employee-status {
+    width: 20%;
+}
+
+.employees-table td.employee-status.pending {
+    color: var(--yellow-9);
+}
+
+.employees-table td.employee-status.approved {
+    color: var(--cyan-9);
+}
+
+.employees-table td.employee-status.progress {
+    color: var(--indigo-9);
+}
+
+.employees-table td.employee-status.activated {
+    color: var(--green-9);
+}
+
+.employees-table td.employee-status.blocked {
+    color: var(--red-9);
+}
+
+.employees-table th.employee-actions {
+    width: 10%;
+}
+
+.employees-table button {
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.employees-table button.button-approve {
+    color: #2E8D00;
+}
+
+.employees-table button.button-view {
+    color: #004DEB;
+}
+
+.employees-table button:hover {
+    text-decoration: underline;
+}
+
+.employees-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}

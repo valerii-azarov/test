@@ -1,0 +1,25 @@
+.button-fill,
+.button-fill-normal {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 14px;
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button-fill,
+.button-fill-normal {
+  background-color: #000000;
+  transition: background-color 0.3s;
+}
+
+.button-fill:hover,
+.button-fill-normal:hover {
+  background-color: #343a40;
+}
+
+.button-fill-normal:disabled {
+  background: #343a40;
+}

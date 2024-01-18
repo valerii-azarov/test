@@ -1,0 +1,8 @@
+export enum ScheduleTypes {
+  // завантаження розкладу
+  LOAD_SCHEDULE_REQUEST = "LOAD_SCHEDULE_REQUEST",
+  LOAD_SCHEDULE_SUCCESS = "LOAD_SCHEDULE_SUCCESS",
+  LOAD_SCHEDULE_FAILURE = "LOAD_SCHEDULE_FAILURE",
+  // скидання даних
+  RESET_DATA = "RESET_DATA",
+}

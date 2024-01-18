@@ -1,0 +1,102 @@
+.edit-edit-employee {
+    position: relative;
+}
+
+.edit-edit-employee__container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background: #E7EEF3;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.edit-edit-employee.active .edit-edit-employee__container {
+    transform: translateX(0);
+}
+
+.edit-edit-employee__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 100%;
+}
+
+.edit-edit-employee__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E7EEF3;
+    padding-bottom: 10px;
+    margin: 15px 25px 0;
+}
+
+.edit-edit-employee__title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.edit-edit-employee__close {
+    width: 30px;
+    height: 30px;
+    background: none;
+    background-image: url(../../../../assets/images/icons/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.edit-edit-employee__close:hover,
+.edit-edit-employee__close:focus {
+    border: 2px solid #000;
+}
+
+.edit-edit-employee__content {
+    margin: 0 25px;
+    background-color: #E7EEF3;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.edit-edit-employee__content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.edit-edit-employee__content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.edit-edit-employee__content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.edit-edit-employee__footer {
+    display: flex;
+    align-items: center;
+    background-color: #E7EEF3;
+    padding-top: 10px;
+    margin: 0 25px 15px;
+    gap: 15px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 5;
+}
+
+.edit-edit-employee.active .overlay {
+    display: block;
+}

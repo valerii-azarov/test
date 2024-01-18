@@ -1,0 +1,172 @@
+.employee-services__container {
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.employee-services__wrapper {
+    padding: 0px;
+}
+
+.employee-services__header {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.employee-services__title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.employee-services__refresh-button {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid #F8F8F8;
+    border-radius: 5px;
+}
+
+.employee-services__refresh-button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    max-width: 5px;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.employee-services__refresh-button:hover {
+    background: #F8F8F8;
+    border: 2px solid #E7EEF3;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------- */
+
+.employee-services-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-services-table th,
+.employee-services-table td {
+    border-top: 1px solid #F8F8F8;
+    border-bottom: 1px solid #F8F8F8;
+    padding: 10px 15px;
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 12px;
+    max-width: 500px;
+    line-height: 1.5;
+    color: #71737C;
+}
+
+.employee-services-table th {
+    background-color: #F8F8F8;
+    color: #000000;
+}
+
+.employee-services-table th.employee-service-number {
+    width: 10%;
+}
+
+.employee-services-table th.employee-service-name {
+    width: 40%;
+}
+
+.employee-services-table th.employee-service-start-time {
+    width: 10%;
+}
+
+.employee-services-table th.employee-service-end-time {
+    width: 10%;
+}
+
+.employee-services-table th.employee-service-day {
+    width: 10%;
+}
+
+.employee-services-table th.employee-service-interval {
+    width: 10%;
+}
+
+.employee-services-table th.employee-service-actions {
+    width: 10%;
+}
+
+.employee-services-table button.button-view {
+    color: #004DEB;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.employee-services-table button.button-view:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------- */
+
+.employee-services-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* --------------------------------------------------------------- */
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-columns-select {
+    margin-right: 25px;
+    padding: 5px 10px;
+    border: 2px solid #F8F8F8;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.pagination-columns-select:hover {
+    border-color: #CCCCCC;
+}
+
+.pagination-columns-select:focus {
+    outline: none;
+    border-color: #CCCCCC;
+}
+
+.pagination-count {
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.pagination-prev-button,
+.pagination-next-button {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+}
+
+.pagination-prev-button:hover,
+.pagination-next-button:hover {
+    color: #CCCCCC;
+}
+
+.pagination-prev-button:disabled,
+.pagination-next-button:disabled {
+    color: #CCCCCC;
+    cursor: not-allowed;
+}
